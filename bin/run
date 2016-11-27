@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+//无倾入式编译es6
+require('babel-core/register');
+require("babel-polyfill");
+require('./www');

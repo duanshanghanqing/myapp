@@ -1,0 +1,43 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/run"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "captchapng": "0.0.1",
+    "connect-mongo": "^1.3.2",
+    "connect-multiparty": "^2.0.0",
+    "connect-redis": "^3.1.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "^2.4.2",
+    "express": "~4.13.4",
+    "express-session": "^1.13.0",
+    "mongoose": "^4.5.3",
+    "morgan": "~1.7.0",
+    "redis": "^2.6.2",
+    "require-directory": "^2.1.1",
+    "serve-favicon": "~2.3.0",
+	"babel": "^6.5.2",
+    "babel-core": "^6.18.2",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-less": "^3.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "jshint": "^2.9.2",
+	"to-fast-properties": "^1.0.2"
+  }
+}

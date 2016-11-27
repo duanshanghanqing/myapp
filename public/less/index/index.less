@@ -1,0 +1,208 @@
+@import "./../global.less";
+body{
+	.publicBackground(@backgroundimage:url("../../images/bg.jpg"));
+}
+.contentBox{
+	width: 1024px;
+	margin: 0 auto;
+	.leftBox{
+		width: 800px;
+		padding: 5px;
+		background-color: #fff;
+		border-radius: 5px;
+		overflow: hidden;
+		.left();
+		/*标题*/
+		.s_tuijian {
+		    width: 100%;
+		    height: 68px;
+		    margin-left: 10px;
+		    background: url("../../images/r_line.jpg") bottom left repeat-x;
+		    p {
+			    width: 650px;
+			    height: 68px;
+			    background: url("../../images/tj.png") no-repeat;
+			    padding: 15px 0px 5px 60px;
+			    color: #D242DF;
+			    font-size: 24px;
+			    margin-left: 5px;
+			    span{
+			    	color: #3798A5;
+    				padding-left: 3px;
+    				font-size: 24px
+			    }
+			}
+		}
+		/*文章*/
+		.article{
+			width: 100%;
+			display: block;
+			position: relative;
+			/*标题*/
+			>h3{
+				width: 300px;
+			    height: 30px;
+			    overflow: hidden;
+			    line-height: 30px;
+			    font-size: 17px;
+			    font-weight:bold;
+			    padding-left: 5px;
+			    color: #D3535D;
+			    cursor: pointer;
+			    white-space:nowrap;
+		        overflow:hidden;
+		        text-overflow:ellipsis;
+			    transition: padding-left 2s;
+				-moz-transition: padding-left 2s;	/* Firefox 4 */
+				-webkit-transition: padding-left 2s;	/* Safari 和 Chrome */
+				-o-transition: padding-left 2s;	/* Opera */
+			}
+			>h3:hover{
+ 				padding-left: 50px;
+			}
+			/*文章内容*/
+			.articleContentBox{
+				width: 100%;
+				height: 140px;
+				background-color: #fff;
+				/*文章图片*/
+				.articleImg{
+					width: 200px;
+					height: 130px;
+					overflow: hidden;
+					.left();
+					img{
+						width: 200px;
+						height: 130px;
+						display: block;
+						cursor: pointer;
+						background-size: 100% 100%;
+						transition:all 1s; 
+						-webkit-transition:all 1s; 
+						-moz-transition:all 1s; 
+						-o-transition:all 1s; 
+
+					}
+					img:hover{
+						transform:scale(2) rotate(10deg); 
+						-webkit-transform:scale(2) rotate(10deg); 
+						-moz-transform:scale(2) rotate(10deg); 
+						-o-transform:scale(2) rotate(10deg); 
+					}
+				}
+				/*文章内容*/
+				.articleContent{
+					width: 585px;/*600*/
+					height: 130px;
+					.right();
+					/*文本内容*/
+					.articleTxt{
+						width: 100%;
+						height: 100px;
+						font-size: 14px;
+						text-indent: 30px;
+						text-align:justify;/*设置内容两端对齐*/
+        				text-justify:inter-ideograph;
+        				background-color: #fff;
+        				display: -webkit-box;
+					    -webkit-line-clamp: 5;
+					    -webkit-box-orient: vertical;
+					    overflow: hidden;
+					}
+					/*文章信息*/
+					.articleMessage{
+						width: 100%;
+						height: 30px;
+						line-height: 30px;
+						.author {
+						    display: block;
+						    width: 60px;
+						    height: 30px;
+						    background: url("../../images/tx.jpg") 5px 7px no-repeat;
+						    padding-left: 25px;
+						    margin-left: 10px;
+						    .left();
+						}
+						.sj {
+						    display: block;
+						    width: 230px;
+						    height: 30px;
+						    background: url("../../images/sj.jpg") 5px 7px no-repeat;
+						    padding-left: 25px;
+						    margin-left: 50px;
+						    .left();
+						}
+						.fl {
+						    display: block;
+						    width: 110px;
+						    heigt: 30px;
+						    text-align: center;
+						    margin-left: 10px;
+						    .left();
+						    a{
+						    	font-size: 14px;
+						    }
+						}
+						.yd {
+						    display: block;
+						    width: 80px;
+						    height: 25px;
+						    line-height: 25px;
+						    text-align: center;
+						    border: 1px #000 solid;
+						    color: red;
+						    margin-top: 3px;
+						    margin-right: 10px;
+						    .right();
+						}
+					}
+				}
+			}
+		}
+	}
+	.rightBox{
+		width: 215px;
+		position: relative;
+		.right();
+		.f1{
+			width: 215px;
+			padding: 10px;
+			background: #fff;
+			margin: 0 auto;
+			.s_about {
+			    width: 100%;
+			    padding: 5px;
+			    border: 1px solid #ccc;
+			    h4{
+					padding: 3px 3px 3px 0px;
+			    }
+			    img{
+			    	width: 100%;
+			    	display: block;
+			    	margin: 0 auto;
+			    }
+			}
+		}
+		.f2{
+			width: 215px;
+			background: #fff;
+			margin: 10 auto;
+			.link {
+			    width: 100%;
+			    height: 180px;
+			    border: 1px solid #ccc;
+			    margin-top: 5px;
+			    background: #fff;
+			    h2 {
+				    font-size: 16px;
+				    color: #444;
+				    padding: 5px 0px 2px 5px;
+				    border-bottom: 1px solid red;
+				}
+				p {
+				    padding: 10px 0px 0px 15px;
+				}
+			}
+		}
+	}
+}

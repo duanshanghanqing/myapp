@@ -1,0 +1,57 @@
+<%
+    var styleArray = ["/css/index/index.min.css"];//根目录css
+    var scriptArray = ["/js/index/index.min.js"];//根目录js
+%>
+<% include include/header.html %>
+<div class="contentBox" ng-app="myApp">
+    <div class="leftBox" ng-controller="customersCtrl">
+        <!--标题-->
+        <div class="s_tuijian">
+            <p>文章<span>推荐</span></p>
+        </div>
+        <!--标题-->
+        <!--文章-->
+        <div class="article" ng-repeat="list in articleList">
+            <h3>浅谈：{{list.title}}</h3>
+            <div class="articleContentBox">
+                <div class="articleImg">
+                    <img src="images/s.jpg" alt="html5和html的区别" title="html5和html的区别">
+                </div>
+                <div class="articleContent">
+                    <p class="articleTxt">
+                        {{list.content}}
+                    </p>
+                    <div class="articleMessage">
+                        <span class="author">{{list.username}}</span>
+                        <span class="sj">时间:{{list.time | date:"yyyy年dd月MM HH:mm:ss"}}</span>
+                        <span class="fl">分类:<a href="#" title="学无止境">学无止境</a></span>
+                        <a href="#" class="yd" title="阅读全文">阅读全文</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rightBox">
+        <div class="f1">
+            <div class="s_about">
+                <h4>关于博主</h4>
+                <img src="../../file/<%=userObj.avatar%>" alt="博主">
+                <p>博主：<%=userObj.username%></p>
+                <p>职业：<%=userObj.job%></p>
+                <p>简介：</p>
+                <p>
+                <a href="#" title="联系博主"><span class="left b_1"></span></a><a href="#" title="加入QQ群，一起学习！"><span class="left b_2"></span></a>
+                </p><div class="clear"></div>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="f2">
+            <div class="link">
+                <h2>友情链接</h2>
+                <p><a href="http://www.duanliang920.com"><%=userObj.username%>个人博客</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<% include include/footer.html %>

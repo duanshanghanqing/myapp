@@ -1,0 +1,17 @@
+
+<!-- 项目依赖 -->
+<script src="<%=staticResources%>/lib/app.js"></script>
+<script src="<%=staticResources%>/lib/jquery/jquery.js"></script>
+<script src="<%=staticResources%>/lib/bootstrap/js/bootstrap.js"></script>
+<script src="<%=staticResources%>/lib/angular/angular.js"></script> 
+<%
+	if(scriptArray){
+		for(var i=0;i<scriptArray.length;i++){
+%>
+		<script src="<%=staticResources%><%=scriptArray[i]%>"></script> 
+<%			
+		}
+	}
+%>
+</body>
+</html>
